@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="banner">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><img class="navbar-image" src="images/ck.png" style="height: 50%; width: 100%;" alt="ck logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="portfolio.html" class="navbar__links">Portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__btn"><a href="/"
+                class="button">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <span class="h1">Collin</span> <br><span class ="h2">Kimball</span></h1>
+                <p>Social Media & Web Designer</p>
+            </div>
+        </div>
+    </div>
+    <div class ="contact">
+        <div class="content">
+            <h2>Let's Work Together</h2>
+            <p>Provide information about the specific details or goals for your project. <br>
+                Prices may vary depending on the size/type of project.</p>
+        </div>
+        <div class="contact__info">
+            <form>
+                <div class="input__box">
+                    <input type="text" name="" required="required">
+                    <span>Subject</span>
+                </div>
+                <div class="input__box">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="input__box">
+                    <textarea reuqired="required"></textarea>
+                    <span>Message</span>
+                </div>
+                <div class="input__box">
+                    <input type="submit" name="" value="send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!--<script type="text/javascript">
+        menu.addEventListener("scroll", function() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('while-scroll', window.scrollY > 0);
+        });
+    </script> -->
+    </section>
+</body>
+</html>
