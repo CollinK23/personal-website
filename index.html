@@ -41,30 +41,17 @@
         </div>
     </div>
     <div class ="contact">
-        <div class="content">
+        <div class="contact__message">
             <h2>Let's Work Together</h2>
-            <p>Provide information about the specific details or goals for your project. <br>
+            <p>Provide information about any specific details or goals for your project. <br>
                 Prices may vary depending on the size/type of project.</p>
         </div>
-        <div class="contact__info">
-            <form>
-                <div class="input__box">
-                    <input type="text" name="" required="required">
-                    <span>Subject</span>
-                </div>
-                <div class="input__box">
-                    <input type="text" name="" required="required">
-                    <span>Email</span>
-                </div>
-                <div class="input__box">
-                    <textarea reuqired="required"></textarea>
-                    <span>Message</span>
-                </div>
-                <div class="input__box">
-                    <input type="submit" name="" value="send">
-                </div>
-            </form>
-        </div>
+        <form class="contact__info" action="index.html" method="post">
+            <input type="text" class="contact__info__text" placeholder="Name">
+            <input type="email" class="contact__info__text" placeholder="Email">
+            <textarea class="contact__info__text" placeholder="Message"></textarea>
+            <input type="submit" class="contact__info__btn" value="Submit">
+        </form>
     </div>
     <script src="app.js"></script>
     <!--<script type="text/javascript">
