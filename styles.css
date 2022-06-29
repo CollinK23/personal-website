@@ -285,6 +285,22 @@
     line-height: 6.5rem;
 }
 
+.main__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    height: 100%;
+    margin-top: 4rem;
+    width: 25%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: linear-gradient(to top, #cc1367 0%, #fa014a 100%);
+    color: #ffffff;
+}
+
 .main__content p {
     font-size: 1.6rem;
     font-weight: 400;
@@ -295,6 +311,27 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.main__btn:hover {
+    background: #ffffff;
+    color: #131313;
+    transition: all 0.3s ease;
+}
+
+#example__graphic {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+#example__graphic:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 /*---------------------------------------------------------------------*/
@@ -323,6 +360,15 @@
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+
+    .main__btn {
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    #example__graphic {
+        margin: 0 auto;
     }
 }
 
@@ -370,6 +416,7 @@
     font-size: 1rem;
     font-stretch: 2rem;
     line-height: 30px;
+    margin-right: 64px;
 }
 
 .contact__info {
@@ -392,6 +439,7 @@
     color: #ffffff;
     background: transparent;
     font-weight: 100;
+    font-size: 16px;
     scrollbar-width: normal;
     scrollbar-color: #ffffff #00000000;
     cursor: text;
@@ -427,4 +475,32 @@
 textarea.contact__info__text {
     resize: none;
     height: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 6rem auto;
+        height: 90vh;
+    }
+
+    .contact__message h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .contact__message p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-right: 0;
+    }
+
+    .contact__info {
+        margin-top: -11rem;
+    }
 }
