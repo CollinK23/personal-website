@@ -558,3 +558,29 @@ textarea.contact__info__text {
     transform: scale(1.1);
     transition: 0.5s ease;
 }
+
+.recent__work__btns {
+    text-align: center;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    height: 100%;
+    margin-top: -10rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: linear-gradient(to top, #cc1367 0%, #fa014a 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #131313;
+    transition: all 0.3s ease;
+}
