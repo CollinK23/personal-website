@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
-    height: 200vh;
+    height: 300vh;
     }
 
 .navbar {
@@ -71,6 +71,7 @@
 
 .navbar__item{
     height: 80px;
+    padding-right: 1.5rem;
 }
 
 .navbar__links{
@@ -87,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+
     width: 100%;
 }
 
@@ -422,7 +423,6 @@
 .contact__info {
     max-width: 600;
     margin: a;
-    padding:0 10px;
     overflow: hidden;
 }
 
@@ -471,7 +471,6 @@
     transition: all 0.3s ease;
 }
 
-
 textarea.contact__info__text {
     resize: none;
     height: 120px;
@@ -503,4 +502,59 @@ textarea.contact__info__text {
     .contact__info {
         margin-top: -11rem;
     }
+}
+
+/* ----------------------------------------------------------------------*/
+
+.recent {
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    padding: 0 50px;
+    max-width: 1300px;
+}
+
+.recent__text {
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+}
+ .recent__text h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 5rem;
+ }
+
+ .recent__images {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin: 0 auto;
+    z-index: 1;
+ }
+
+ .recent-image1, .recent-image2, .recent-image3 {
+    width: 100%;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    margin-top: -10rem;
+ }
+
+ #recent__image1, #recent__image2, #recent__image3 {
+    transition: 0.5s ease;
+ }
+
+ #recent__image1:hover, #recent__image2:hover, #recent__image3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
