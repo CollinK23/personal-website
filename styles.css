@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
-    height: 300vh;
+    height: 315vh;
     }
 
 .navbar {
@@ -584,13 +584,55 @@ button:hover {
     }
 
     #banner {
-        height: 400vh;
+        height: 420vh;
     }
 }
 
 /* ----------------------------------------------------------------------*/
 
-.footer {
+footer {
+    background-color: #000000;
+    height: 18vh;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    color: #ffffff;
+    clear: both;
+}
+
+.footer-image {
+    margin-top: 46px;
+}
+
+.footer__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.footer__items li {
+    margin: 0 10px;
+}
+
+.footer__items a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__items a i{
+    font-size: 1.3rem;
+}
+
+/*.footer {
     background-color: #000000;
     height: 15vh;
 }
@@ -616,4 +658,4 @@ button:hover {
     text-decoration: none;
     width: 40%;
     margin-top: 2.75rem;
-}
+}*/
