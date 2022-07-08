@@ -12,7 +12,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  height: 300vh;
+  height: 320vh;
+  padding-bottom: 15vh;
 }
 
 .navbar {
@@ -31,18 +32,6 @@
   background: #00000037;
   backdrop-filter: blur(1rem);
 }
-
-/*navbar.while-scroll{
-    background: #ffffff;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}*/
 
 .navbar__container {
   display: flex;
@@ -242,5 +231,128 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ----------------------RECENT WORK--------------------------*/
+
+.recent {
+  height: 80vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80% 80% 80%;
+  justify-self: center;
+  margin: auto auto;
+  z-index: 1;
+  width: 100%;
+  padding: 0 50px;
+  max-width: 1300px;
+}
+
+.recent__text {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+.recent__text h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.recent-image {
+  width: 100%;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#recent__image {
+  transition: 0.5s ease;
+}
+
+#recent__image:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  transition: 0.5s ease;
+}
+
+.recent__work__btns {
+  text-align: center;
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 20px;
+  height: 100%;
+  margin-top: -10rem;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: linear-gradient(to top, #cc1367 0%, #fa014a 100%);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #131313;
+  transition: all 0.3s ease;
+}
+
+/* ----------------------RECENT WORK RESPONSIVE--------------------------*/
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .recent {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    display: grid;
+    height: 180vh;
+  }
+
+  #banner {
+    height: 420vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .recent {
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+    margin-top: -10rem;
+    padding-top: 5rem;
+    display: grid;
+    height: 180vh;
+    padding-bottom: 100px;
+  }
+
+  #banner {
+    height: 760vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1300px) {
+  #banner {
+    height: 330vh;
+  }
+  .recent {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    padding-bottom: 100px;
+  }
+  .recent__work__btns span {
+    font-size: 12px;
+  }
+  button {
+    padding: 9px 12px;
   }
 }
