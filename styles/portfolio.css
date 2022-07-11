@@ -7,7 +7,7 @@
 
 #banner {
   background-image: linear-gradient(to top, #0e0e10, #23252a00),
-    url("./images/webbackground.png");
+    url("../images/webbackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -108,7 +108,133 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar {
+    background: #00000037;
+    backdrop-filter: blur(1rem);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar.active {
+    background: #000000;
+    backdrop-filter: blur(1rem);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: 998;
+    background: #00000037;
+    backdrop-filter: blur(1rem);
+  }
+
+  .navbar__menu.active {
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 998;
+    height: 80vh;
+    font-size: 1.6rem;
+    background: #000000;
+    backdrop-filter: blur(1rem);
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin: 0;
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 769) and (max-width: 960px) {
   .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -266,8 +392,14 @@
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+  border-radius: 30px;
+  transition: 0.5s ease;
 }
 
+.recent-image:hover {
+  box-shadow: #0000007c 15px 15px 30px;
+  transition: 0.5s ease;
+}
 #recent__image {
   transition: 0.5s ease;
 }
@@ -276,7 +408,6 @@
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-
   transition: 0.5s ease;
 }
 
@@ -322,14 +453,15 @@ button:hover {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 768px) {
+@media screen and (orientation: landscape) and (max-width: 1099px) {
   .recent {
     -webkit-transform: scale(0.4);
     -ms-transform: scale(0.4);
     transform: scale(0.4);
     margin-top: -10rem;
     padding-top: 5rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 180vh;
     padding-bottom: 100px;
   }
@@ -339,7 +471,7 @@ button:hover {
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1300px) {
+@media only screen and (orientation: landscape) and (min-width: 1100px) and (max-width: 1300px) {
   #banner {
     height: 240vh;
   }
@@ -349,7 +481,7 @@ button:hover {
     transform: scale(0.7);
     padding-bottom: 100px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px 350px 350px;
+    grid-template-rows: 470px 470px 470px;
   }
   .recent__work__btns span {
     font-size: 12px;

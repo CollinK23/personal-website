@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/ed8e0fbc25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="banner">
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"
+            ><img
+              class="navbar-image"
+              src="images/ck.png"
+              style="height: 50%; width: 100%"
+              alt="ck logo"
+          /></a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="portfolio.html" class="navbar__links">Portfolio</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">About</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="contact.html" class="button">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contact">
+        <div class="contact__message">
+          <h2>Let's Work Together</h2>
+          <p>
+            Provide information about any specific details or goals for your
+            project. Prices may vary depending on the size/type of project.
+          </p>
+        </div>
+        <form class="contact__info" action="index.html" method="post">
+          <input type="text" class="contact__info__text" placeholder="Name" />
+          <input type="email" class="contact__info__text" placeholder="Email" />
+          <textarea
+            class="contact__info__text"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" class="contact__info__btn" value="Submit" />
+        </form>
+      </div>
+      <script src="app.js"></script>
+    </section>
+    <footer>
+      <div class="footer__menu">
+        <a href="/" id="footer__logo"
+          ><img
+            class="footer-image"
+            src="images/ckwhite.png"
+            style="height: 50%; width: 100%"
+            alt="ck logo"
+        /></a>
+        <ul class="footer__items">
+          <li>
+            <a
+              href="https://twitter.com/KimballDesigns"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.behance.net/collinkimball"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/collin-kimball-b004a622b"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/CollinK23"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github-square"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
