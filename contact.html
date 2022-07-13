@@ -16,7 +16,7 @@
     <section id="contact__banner">
       <nav class="navbar">
         <div class="navbar__container">
-          <a href="/" id="navbar__logo"
+          <a href="index.html" id="navbar__logo"
             ><img
               class="navbar-image"
               src="images/ck.png"
@@ -30,7 +30,7 @@
           </div>
           <ul class="navbar__menu">
             <li class="navbar__item">
-              <a href="/" class="navbar__links">Home</a>
+              <a href="index.html" class="navbar__links">Home</a>
             </li>
             <li class="navbar__item">
               <a href="portfolio.html" class="navbar__links">Portfolio</a>
@@ -44,24 +44,21 @@
           </ul>
         </div>
       </nav>
-      <div class="contact">
-        <div class="contact__message">
-          <h2>Let's Work Together</h2>
-          <p>
-            Provide information about any specific details or goals for your
-            project. Prices may vary depending on the size/type of project.
-          </p>
-        </div>
-        <form class="contact__info" action="index.html" method="post">
-          <input type="text" class="contact__info__text" placeholder="Name" />
-          <input type="email" class="contact__info__text" placeholder="Email" />
-          <textarea
-            class="contact__info__text"
-            placeholder="Message"
-          ></textarea>
-          <input type="submit" class="contact__info__btn" value="Submit" />
-        </form>
+      <div class="contact__text">
+        <h2>Let's Work Together</h2>
+        <p>
+          Provide information about any specific details or goals for your
+          project. <br />
+          Prices may vary depending on the size/type of project.
+        </p>
       </div>
+      <form class="contact__form" action="index.html" method="post">
+        <input type="text" class="placeholder__text" placeholder="Name" />
+        <input type="email" class="placeholder__text" placeholder="Email" />
+        <input type="subject" class="placeholder__text" placeholder="Subject" />
+        <textarea class="placeholder__text" placeholder="Message"></textarea>
+        <input type="submit" class="contact__info__btn" value="Submit" />
+      </form>
       <script src="app.js"></script>
     </section>
     <footer>
