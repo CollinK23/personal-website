@@ -784,6 +784,7 @@ textarea.contact__info__text {
   width: 100%;
   padding: 0 50px;
   max-width: 1300px;
+  padding-bottom: 6em;
 }
 
 .recent__text {
@@ -861,6 +862,13 @@ button:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  .recent__text h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 800;
   }
 }
 
