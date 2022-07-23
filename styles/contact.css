@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  height: 115vh;
+  height: 135vh;
   padding-bottom: 15vh;
 }
 
@@ -24,6 +24,7 @@
 
 .contact__text {
   text-align: center;
+  justify-self: center;
   margin: 0 auto;
   padding: 0 50px;
   max-width: 1300px;
@@ -42,7 +43,6 @@
   font-size: 1.2rem;
   font-stretch: 2rem;
   line-height: 2rem;
-  margin-right: 4em;
 }
 
 .contact__form {
@@ -79,4 +79,22 @@
 textarea.placeholder__text {
   resize: none;
   height: 160px;
+}
+
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) {
+  #contact__banner {
+    height: 150vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 768px) {
+  #contact__banner {
+    height: 250vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1024px) {
+  #contact__banner {
+    height: 190vh;
+  }
 }
