@@ -795,14 +795,15 @@ textarea.contact__info__text {
 .recent__text h1 {
   font-size: 3rem;
   font-weight: 300;
-  margin-top: 5rem;
+  line-height: 74px;
+  margin-top: 10rem;
 }
 
 .recent-image {
   width: 100%;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
   border-radius: 30px;
   transition: 0.5s ease;
 }
@@ -814,6 +815,7 @@ textarea.contact__info__text {
 
 #recent__image {
   transition: 0.5s ease;
+  margin-top: 2em;
 }
 
 #recent__image:hover {
@@ -894,17 +896,31 @@ button:hover {
     height: 180vh;
     padding-bottom: 100px;
   }
+
+  #banner {
+    height: 760vh;
+  }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1300px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+  button {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1300px) {
   #banner {
-    height: 330vh;
+    height: 320vh;
   }
   .recent {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
     padding-bottom: 100px;
+  }
+
+  .contact {
+    margin: 4em auto;
   }
   .recent__work__btns span {
     font-size: 12px;
